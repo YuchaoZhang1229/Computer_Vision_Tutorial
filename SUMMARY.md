@@ -4,4 +4,6 @@
 
 ## 目标检测
 
-* [目标检测算法](mu-biao-jian-ce/mu-biao-jian-ce-suan-fa.md)
+* [概述](mu-biao-jian-ce/gai-shu.md)
+* [Page](mu-biao-jian-ce/page.md)
+* [评价指标](mu-biao-jian-ce/ping-jia-zhi-biao.md)
