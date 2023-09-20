@@ -2,9 +2,10 @@
 
 * [📬 计算机视觉](README.md)
 
-## Group 1
+## 前置知识
 
-* [深度学习基础](group-1/shen-du-xue-xi-ji-chu.md)
+* [深度学习基础](qian-zhi-zhi-shi/shen-du-xue-xi-ji-chu.md)
+* [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 目标检测
 
