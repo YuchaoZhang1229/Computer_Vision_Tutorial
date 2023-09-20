@@ -22,19 +22,19 @@ Object Detection in 20 Years: A Survey
 
 ### Two Stage
 
-先从图像中提取若干候选框, 在逐一地对这些候选框甄别, 以及调整他们的坐标 (准确但耗时)
+先进行区域生成，该区域称之为 region proposal（简称RP，一个有可能包含待检物体的预选框），再通过卷积神经网络进行样本分类
+
+任务流程：特征提取 --> 生成RP --> 分类/定位回归。
 
 * RCNN
-* Fast-RCNN
-* Faster-RCNN
+* SPP-Net
+* Fast R-CNN
+* Faster  R-CNN
+* R-FCN
 
 
 
 Faster-RCNN&#x20;
-
-* 有预选框 RPN
-* 速度通常较慢 (5FPS), 但是效果通常还是不错
-* 了解Mask-RCNN
 
 <figure><img src="../.gitbook/assets/image-20230911160747327.png" alt=""><figcaption></figcaption></figure>
 
@@ -46,12 +46,3 @@ Faster-RCNN&#x20;
 * SSD
 * Retina-Net
 
-
-
-YOLO -one stage
-
-* 不用预选框
-* 速度非常快, 适合做实时检测任务
-* 效果不太好
-
-YOLO-V5 速度和准确性都不错
