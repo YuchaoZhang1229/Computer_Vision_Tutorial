@@ -12,4 +12,4 @@
 * [概述](mu-biao-jian-ce/gai-shu.md)
 * [评价指标](mu-biao-jian-ce/ping-jia-zhi-biao.md)
 * [YOLO-V1](mu-biao-jian-ce/yolo-v1.md)
-* [评价指标](mu-biao-jian-ce/ping-jia-zhi-biao-1.md)
+* [Page](mu-biao-jian-ce/page.md)
