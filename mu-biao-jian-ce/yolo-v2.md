@@ -7,6 +7,10 @@
 
 ## YOLOv2的训练
 
+首先, 模型使用只有图像级别标签的大规模分类数据集进行预训练. 这一步的预训练可以让模型学习到一些通用的, 低层次的图像特征
+
+接下来, 模型使用包含有边界框标注的目标检测数据集进行微调. 这一步可以让模型学习如何预测物体的位置和大小
+
 <figure><img src="../.gitbook/assets/v2-a2167f0ab8d7b65a849ce4f38e53e6b5_720w.webp" alt=""><figcaption><p>YOLOv2训练的三个阶段</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/v2-b23fdd08f65266f7af640c1d3d00c05f_720w.png" alt=""><figcaption><p>YOLOv2结构示意图</p></figcaption></figure>
