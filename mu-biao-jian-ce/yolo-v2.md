@@ -16,6 +16,7 @@
 ## Convolutional With Anchor Boxes
 
 * Dimension Clusters 在边界框进行聚类, 以获得先验框
+* Direct location prediction 预测边界框中心点相对于对应cell左上角位置的相对偏移值
 
 在YOLOv1中，输入图片最终被划分为 7×7 网格，每个单元格预测2个边界框。YOLOv1最后采用的是全连接层**直接**对边界框进行预测，其中边界框的宽与高是相对整张图片大小的，而由于各个图片中存在**不同尺度**和**长宽比**（scales and ratios）的物体，YOLOv1在训练过程中学习适应不同物体的形状是比较困难的，这也导致YOLOv1在精确定位方面表现较差。
 
