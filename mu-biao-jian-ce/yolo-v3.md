@@ -8,7 +8,13 @@
 * [https://medium.com/image-processing-and-ml-note/yolov3-you-only-look-once-object-detection-13a312c7336f](https://medium.com/image-processing-and-ml-note/yolov3-you-only-look-once-object-detection-13a312c7336f)
 * [https://zhuanlan.zhihu.com/p/76802514](https://zhuanlan.zhihu.com/p/76802514)
 
-## YOLO-V3训练
+## YOLO-V3m
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/YOLOV3.png" alt=""><figcaption></figcaption></figure>
+
+## 损失函数
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
