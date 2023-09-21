@@ -5,6 +5,16 @@
 * [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242)
 * [https://zhuanlan.zhihu.com/p/35325884](https://zhuanlan.zhihu.com/p/35325884)
 
+## YOLOv2的训练
+
+<figure><img src="../.gitbook/assets/v2-a2167f0ab8d7b65a849ce4f38e53e6b5_720w.webp" alt=""><figcaption><p>YOLOv2训练的三个阶段</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/v2-b23fdd08f65266f7af640c1d3d00c05f_720w.png" alt=""><figcaption><p>YOLOv2结构示意图</p></figcaption></figure>
+
+YOLO-V2最后特征图的分辨率是 13×13
+
+13 × 13 × 125 = 13 × 13 × (5+20) × 5
+
 ## YOLO-V2的改进策略
 
 <figure><img src="../.gitbook/assets/v2-8f48ba80f887fd5b26bd4211cf740c39_720w.webp" alt=""><figcaption><p>YOLOv2相比YOLOv1的改进策略</p></figcaption></figure>
@@ -40,6 +50,10 @@ YOLOv2借鉴了Faster R-CNN中RPN网络的**先验框**（anchor boxes，prior b
   * 对于大物体, 即使预测值相同, 经过指数函数和先验框大小的相乘后, 也可以表示较大的改变
 
 <figure><img src="../.gitbook/assets/v2-7fee941c2e347efc2a3b19702a4acd8e_720w.png" alt=""><figcaption><p>边界框位置与大小的计算示例图</p></figcaption></figure>
+
+##
+
+
 
 
 
