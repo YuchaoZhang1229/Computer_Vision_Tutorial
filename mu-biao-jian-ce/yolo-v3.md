@@ -1,5 +1,7 @@
 # YOLO-V3
 
+[YOLO-V3 精度论文 + 代码复现](https://www.bilibili.com/video/BV1Vg411V7bJ/?spm\_id\_from=333.337.search-card.all.click)
+
 参考博客
 
 * [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)
