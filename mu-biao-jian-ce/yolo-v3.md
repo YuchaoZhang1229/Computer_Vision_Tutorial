@@ -51,6 +51,21 @@
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+IoU vs L2损失
+
+优点:
+
+* 能够更好地反应重合程度
+* 具有尺度不变性
+
+缺点:
+
+* 当不想交时, loss为0, 无法进行反向传播
+
+IoU vs GIoU
+
+GIoU vs DIoU
+
 ## YOLO-V3的进一步改进
 
 ### YOLO-V3-SPP
