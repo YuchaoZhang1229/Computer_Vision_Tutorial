@@ -17,7 +17,20 @@ YOLO-V2最后特征图的分辨率是 13×13
 
 ## YOLO-V2的改进策略
 
+### Better
+
 <figure><img src="../.gitbook/assets/v2-8f48ba80f887fd5b26bd4211cf740c39_720w.webp" alt=""><figcaption><p>YOLOv2相比YOLOv1的改进策略</p></figcaption></figure>
+
+### Faster
+
+YOLO-V2的速度确实非常快, 在发布时, YOLO-V2在Titan X GPU上运行时, 能够达到了 30-90 FPS 的速度, 这已经可以达到甚至超过实时处理的需求. 具体速度取决于网络的输入尺寸以及模型的复杂性
+
+### Stronger
+
+* **更强的泛化能力:** YOLO-V2引入了多尺度训练, 这使得模型能够更好地处理不同大小和比例的目标, 从而在各种不同的场景和条件下都能有很好的性能
+* **更强的检测能力:** YOLO-V2使用了先验框来改善模型对于小模型的检测能力, 同时它引入了新的位置的预测方法来提升模型在定位物体时的准确性
+* **更强的识别能力:** YOLO-V2提出了一种新的训练策略, 可以同时进行目标检测和图像分类, 这使得模型在训练检测的同时, 还具有很强的目标识别能力
+* **更强的实用性:** YOLO-V2的网络结构更简单, 运行速度更快, 能够在各种硬件设备商实现实时的目标检测, 这使得它在实际应用中具有很强的实用性
 
 ## Batch Normalization
 
@@ -51,7 +64,14 @@ YOLOv2借鉴了Faster R-CNN中RPN网络的**先验框**（anchor boxes，prior b
 
 <figure><img src="../.gitbook/assets/v2-7fee941c2e347efc2a3b19702a4acd8e_720w.png" alt=""><figcaption><p>边界框位置与大小的计算示例图</p></figcaption></figure>
 
-##
+
+
+其他改进
+
+* High Resolution Classifier
+* New Network: Darknet-19
+* Fine-Grained Features
+* Multi-Scale Training
 
 
 
