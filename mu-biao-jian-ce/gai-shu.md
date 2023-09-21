@@ -16,7 +16,7 @@ Object Detection in 20 Years: A Survey
 
 ## 目标检测里程碑
 
-![](../.gitbook/assets/Milestones.png)
+<figure><img src="../.gitbook/assets/Milestones.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -45,4 +45,14 @@ Faster-RCNN&#x20;
 * YOLO
 * SSD
 * Retina-Net
+
+
+
+YOLO系列
+
+* YOLO-V1 CVPR 2016
+* YOLO-V2 YOLO 9000 CVPR 2017
+* YOLO-V3 CVPR 2018
+* YOLO-V4 CVPR 2020
+* YOLO-V5 CVPR 2021  YOLO-X 2021
 
