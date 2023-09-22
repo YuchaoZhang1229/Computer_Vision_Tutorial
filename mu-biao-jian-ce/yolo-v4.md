@@ -28,7 +28,7 @@ PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融�
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## CIoU (定位损失)
 
