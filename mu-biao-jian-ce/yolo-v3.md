@@ -62,9 +62,18 @@ IoU vs L2损失
 
 * 当不想交时, loss为0, 无法进行反向传播
 
-IoU vs GIoU
+### 回归定位损失
 
-GIoU vs DIoU
+* IoU
+* GIoU
+* DIoU
+* CIoU
+* Cross Entropy Loss
+  * 交叉熵损失
+* Focal Loss-用在 yolov3-spp-u 置信度 分类损失
+  * 用来解决正负样本不平衡的问题
+  * α 关注的是正负样本的权重
+  * 容易受到噪音的影响
 
 ## YOLO-V3的进一步改进
 
