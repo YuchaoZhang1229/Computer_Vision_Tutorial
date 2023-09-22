@@ -44,5 +44,5 @@ PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融�
 
 其他改进
 
-* eliminate grid influence
+* eliminate grid sensitivities
 * IoU Threshold (正负样本匹配)
