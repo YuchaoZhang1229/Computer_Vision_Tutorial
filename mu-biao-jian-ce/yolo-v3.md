@@ -31,7 +31,7 @@
   * 1 objectness prediction
   * 80 class predictions
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/YOLOV3.png" alt=""><figcaption></figcaption></figure>
 

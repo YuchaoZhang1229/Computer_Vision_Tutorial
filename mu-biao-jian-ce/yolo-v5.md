@@ -12,11 +12,7 @@ Mixed precision, 混合精度训练, 能够减少显存的占用并且加快训�
 
 Eliminate grid sensitivities
 
-
-
-
-
-
+![](../.gitbook/assets/image.png)
 
 ## YOLOV5的网络结构
 
