@@ -14,6 +14,13 @@ Eliminate grid sensitivities
 
 ![](../.gitbook/assets/image.png)
 
+正样本匹配 (Build Targets)
+
+* 在YOLOv5中, 作者先去计算每个GT Box与对应的Anchor Templates模板的高宽比例, 即:
+* 然后统计这些比例和他们倒数之间的最大值, 这里可以理解成计算GT Box与对应的Anchor Templates分别在宽度以及高度方向的最大差异 (当相等的时候比例为1, 差异很小)
+* 最后统计他们之间的最大值, 即宽度和高度方向差异最大的值
+* 如果GT Box和对应的Anchor Template的r^{max}小于阈值anchor\_t (源码中默认设置为4.0), 即GT Box和对应的Anchor Template的高, 宽比例相差不算太大, 则将GT Box分配给该Anchor Template模板.&#x20;
+
 ## YOLOV5的网络结构
 
 * Neck部分: 将SPP换成了SPPF. 两者的计算结果是一样的, 但SPPF比SPP计算速度快了不止两倍
