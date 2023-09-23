@@ -103,7 +103,11 @@ Feature Pyramid Networks-FPN
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
+比较通用的算法侧优化是backbone(resnet resnext resnest efficientNet等大模型，mobilenet hrnet shufflenet等系列小模型)，Neck(fpn, bi-fpn,panet等各种FPN层)，比较实用的网络优化(deform\_conv，se-net，cbam等attention结构)，head优化(主要是target设计的方方面面。
 
+比如检测anchor-base和anchor-free之间的差异就是在于target和输出之间加了一个anchor作为桥梁)，训练策略优化(主要集中在正负样本均衡，损失函数设计，比如过采样，欠采样，损失函数比如FocalLoss，triplet\_loss，训练流程上比如OHEM等)。
+
+训练参数优化(CosineLearningRate等LR方面的优化，AutoAugment、Mixup、CutOut等数据增强方面的优化)，预训练模型(基于无监督大数据Moco等, 大分辨率pretrain, 最差也得ImageNet-pretrain了，这块NLP方面做的比较好，CV这块我比较看好无监督或者半监督的方法)，新方案(ViT，DETR等transformer在CV里的各种应用)。
 
 
 
