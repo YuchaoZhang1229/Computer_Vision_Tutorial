@@ -70,7 +70,7 @@ YOLO系列
 
     先生成候选区域, 在对区域做预测. 精度高, 速度慢
 
-    如: R-CNN, SPP-net, fast R-CNN, faster R-CNN, R-FCN, FPN, Mask R-CNN
+    如: R-CNN, SPP-net, fast R-CNN, faster R-CNN, R-FCN, FPN, Mask R-CNN, Cascade R-CNN
 2.  单阶段-One Stage
 
     把图像的每个可能区域看做候选区域. 精度低, 速度快
@@ -80,15 +80,28 @@ YOLO系列
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 * Backbone: 卷积网络, 将输入图像转换成特征映射
-* Neck:&#x20;
+* Neck
 * Dense Prediction
 * Sparse Prediction
 
 
 
+Feature Pyramid Networks-FPN
 
+* 卷积网络的浅层特征具有较强的空间信息, 具有较高分辨率, 适合较小的目标
+* 卷积网络的深层特征具有较强的语义信息, 具有较大的感受野, 适合较大的目标
+* FPN是将浅层特征和深层结合起来, 主要有三个部分
+  *   自底向上的通路
 
+      实现前向传播, 生成不同程度的分辨率和语义信息
+  *   自顶向下的通路
 
+      生成多尺度的特征映射
+  *   平衡连接
+
+      连接卷积特征与构造特征. 为特征映射增加图像信息
+
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 
 
