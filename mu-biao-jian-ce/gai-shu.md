@@ -56,3 +56,38 @@ YOLO系列
 * YOLO-V4 CVPR 2020
 * YOLO-V5 CVPR 2021  YOLO-X 2021
 
+
+
+传统的目标检测流水线
+
+1. 候选区生成-通过滑动窗口选择感兴趣区域ROI; 使用多尺寸的输入图像和多尺度的滑动窗口识别多尺度和不同比例的目标
+2. 特征提取-SIFT, Harr, HOG, SURF
+3. 区域分类-常用支持向量机, 结合集成, 串联学习, 梯度提升的方法提高准确率
+
+卷积神经网络应用于目标检测
+
+1.  两阶段-Two Stage
+
+    先生成候选区域, 在对区域做预测. 精度高, 速度慢
+
+    如: R-CNN, SPP-net, fast R-CNN, faster R-CNN, R-FCN, FPN, Mask R-CNN
+2.  单阶段-One Stage
+
+    把图像的每个可能区域看做候选区域. 精度低, 速度快
+
+    如: OverFeat, YOLO, SSD, RetinaNet, YOLOv2, YOLOv3, CornerNet, YOLOv4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
