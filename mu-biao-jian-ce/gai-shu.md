@@ -77,9 +77,12 @@ YOLO系列
 
     如: OverFeat, YOLO, SSD, RetinaNet, YOLOv2, YOLOv3, CornerNet, YOLOv4
 
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-
-
+* Backbone: 卷积网络, 将输入图像转换成特征映射
+* Neck:&#x20;
+* Dense Prediction
+* Sparse Prediction
 
 
 
