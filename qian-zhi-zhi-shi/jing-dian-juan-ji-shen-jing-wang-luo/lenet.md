@@ -8,8 +8,9 @@ description: 1998 CNN开山之作
 
 ## LeNet网络结构
 
-* 先使用卷积层来学习图片空间信息
-* 然后使用全连接层来转换到类别空间
+* 卷积层-提取图像特征
+* 全连接层-用提取出来的特征进行分类
+* 奠定了基础: 多次卷积和池化的组合 → 全连接 → 输出
 
 <figure><img src="../../.gitbook/assets/lenet-5.webp" alt=""><figcaption></figcaption></figure>
 

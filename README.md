@@ -1,5 +1,14 @@
 # 📬 计算机视觉
 
+## CS231n
+
+* 斯坦福李飞飞
+* [同济子豪兄](https://www.bilibili.com/video/BV1K7411W7So/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+
+
+
+##
+
 ## 计算机视觉的任务
 
 * 单个对象
