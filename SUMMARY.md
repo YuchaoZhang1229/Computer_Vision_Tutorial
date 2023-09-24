@@ -6,7 +6,8 @@
 
 * [深度学习基础](qian-zhi-zhi-shi/shen-du-xue-xi-ji-chu.md)
 * [经典卷积神经网络](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/README.md)
-  * [LeNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/lenet.md)
+  * [LeNet-5](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/lenet-5.md)
+  * [AlexNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/alexnet.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 目标检测

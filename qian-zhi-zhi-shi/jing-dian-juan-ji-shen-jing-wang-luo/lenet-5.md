@@ -1,13 +1,10 @@
-# LeNet
+---
+description: 1998 - Gradient-Based Learning Applied to Document Recognition
+---
 
-参考资料
+# LeNet-5
 
-* [https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide](https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide)
-* [https://medium.com/@deepeshdeepakdd2/lenet-5-implementation-on-mnist-in-pytorch-c6f2ee306e37](https://medium.com/@deepeshdeepakdd2/lenet-5-implementation-on-mnist-in-pytorch-c6f2ee306e37)
-* [https://www.bilibili.com/video/BV1t44y1r7ct?p=1](https://www.bilibili.com/video/BV1t44y1r7ct?p=1)
-* [https://medium.com/analytics-vidhya/lenet-architecture-document-recognition-ed971ab2a23f](https://medium.com/analytics-vidhya/lenet-architecture-document-recognition-ed971ab2a23f)
-
-
+[Paper: Gradient-Based Learning Applied to Document Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)
 
 ## LeNet网络结构
 
@@ -63,3 +60,9 @@ model = LeNet5()
 summary(model, input_size=(1, 28, 28))
 ```
 
+## 参考资料
+
+* [https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide](https://www.kaggle.com/code/blurredmachine/lenet-architecture-a-complete-guide)
+* [https://medium.com/@deepeshdeepakdd2/lenet-5-implementation-on-mnist-in-pytorch-c6f2ee306e37](https://medium.com/@deepeshdeepakdd2/lenet-5-implementation-on-mnist-in-pytorch-c6f2ee306e37)
+* [https://www.bilibili.com/video/BV1t44y1r7ct?p=1](https://www.bilibili.com/video/BV1t44y1r7ct?p=1)
+* [https://medium.com/analytics-vidhya/lenet-architecture-document-recognition-ed971ab2a23f](https://medium.com/analytics-vidhya/lenet-architecture-document-recognition-ed971ab2a23f)
