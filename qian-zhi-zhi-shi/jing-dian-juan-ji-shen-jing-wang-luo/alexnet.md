@@ -10,8 +10,12 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 * 使用深度卷积网络来提取图像的深层特征
 * 从识别数字变成识别1000个物体, 在ImageNet超大规模的数据集上进行了训练
-* 使用了 ReLU 激活函数, 解决梯度消失问题 (比 tanh 激活函数快六倍)
-* 模型的基本结构和双GPU的实现
+* ReLU 激活函数
+* 双GPU模型并行
+* LRN 局部响应归一化
+* 重叠最大池化
+* 数据增强 Data Augmentation
+* Dropout 正则化
 
 ## AlexNet 网络结构
 
@@ -19,6 +23,7 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 * 使用 ReLU 激活函数
   * 解决梯度消失问题, 加快学习的速度
   * 只要它的输入大于0, 他就能回传梯度
+  * 比 tanh 激活函数快六倍
 * 双GPU的实现
   * 把模型并行的放在两个GPU上进行训练, 每个GPU各自拥有一半的神经元
   * GPU2- 训练得到的 48 个卷积核提取边缘, 频率, 方向特征
@@ -74,10 +79,6 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-
-
-
-
 ## 搭建 AlexNet 模型
 
 ```python
@@ -94,4 +95,7 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 ## 参考资料
 
-* [https://www.bilibili.com/video/BV1UQ4y1y7A3/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d](https://www.bilibili.com/video/BV1UQ4y1y7A3/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [同济子豪兄](https://www.bilibili.com/video/BV1UQ4y1y7A3/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [Hinton个人主页](https://www.cs.toronto.edu/\~hinton/)
+* [LRN层与BN层的区别](https://towardsdatascience.com/difference-between-local-response-normalization-and-batch-normalization-272308c034ac)
+* [AlexNet的CUDA代码实现](https://code.google.com/archive/p/cuda-convnet/)
