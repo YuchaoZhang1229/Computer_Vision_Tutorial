@@ -56,11 +56,12 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 随机梯度下降 (Stochastic Gradient Descent)
 
-* Batch Size-128
+* Batch Size - 128
 * 动量 (momentum) - 0.9
 * weight decay - 0.0005 → 正则化
+* 学习率 - 0.01
 
-
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ## 卷积神经网络
 
