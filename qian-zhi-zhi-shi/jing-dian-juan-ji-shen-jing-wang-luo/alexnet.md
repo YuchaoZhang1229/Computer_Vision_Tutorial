@@ -21,25 +21,26 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 * 输入图像 227 × 227 × 3
 * 5 个卷积层 + 3 个全连接层
-* 使用 ReLU 激活函数
+* **ReLU 激活函数**
+  * 增加非线性
   * 解决梯度消失问题, 加快学习的速度
   * 只要它的输入大于0, 他就能回传梯度
   * 比 tanh 激活函数快六倍
-* 双GPU的实现
+* **双GPU的实现**
   * 把模型并行的放在两个GPU上进行训练, 每个GPU各自拥有一半的神经元
   * GPU2- 训练得到的 48 个卷积核提取边缘, 频率, 方向特征
   * GPU1- 训练得到的 48 个卷积核提取颜色特征
-* 局部响应归一化 (Local Response Normalization, LRN)
+* **局部响应归一化** (Local Response Normalization, LRN)
   * 同一位置不需要太多的高激活神经元, 起到了侧向抑制的效果
   * VGG指出LRN层没什么用, 只会徒劳增加计算量
-* 重叠池化 (Overlapping Pooling)
+* **重叠池化** (Overlapping Pooling)
   * 认为重叠的池化可以防止过拟合
   * 后续也不用
-* 减少过拟合 之 数据增强
+* 减少过拟合 之 **数据增强**
   * 水平翻转
   * 随机裁剪, 平移变换
   * 颜色, 光照变换
-* 减少过拟合 之 Dropout
+* 减少过拟合 之 **Dropout**
   * 用在全连接层上可以有效防止过拟合
   * 在训练每一步的时候, 把一部分神经元舍去, 让输出为0, 也就是说阻断前向和反向传播, 一般设置 0.5
 
@@ -49,7 +50,17 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## AlexNet训练细节
+
+随机梯度下降 (Stochastic Gradient Descent)
+
+* Batch Size-128
+* 动量 (momentum) - 0.9
+* weight decay - 0.0005 → 正则化
+
+
 
 ## 卷积神经网络
 
@@ -93,12 +104,12 @@ class AlexNet(nn.Module):
         super(AlexNet, self).__init__()
         # 卷积层
         # 第一层 227*227*3 -> 55*55*96 ReLU → LRN → MaxPool
-        self.conv1 = nn.Conv2d(in_channels=3, out_channels=96, kernel_size=11, stride=4, padding=2)
+        self.conv1 = nn.Conv2d(in_channels=3, out_channels=96, kernel_size=11, stride=4, padding=0)
         self.relu1 = nn.ReLU()
         self.lrn1 = nn.LocalResponseNorm(size=5, alpha=1e-4, beta=0.75, k=2)
         self.pool1 = nn.MaxPool2d(kernel_size=3, stride=2)
         # 第二层 55*55*96 -> 27*27*256 ReLU → LRN → MaxPool
-        self.conv2 = nn.Conv2d(in_channels=96, out_channels=256, kernel_size=5, padding=2)
+        self.conv2 = nn.Conv2d(in_channels=96, out_channels=256, kernel_size=5,  padding=2)
         self.relu2 = nn.ReLU()
         self.lrn1 = nn.LocalResponseNorm(size=5, alpha=1e-4, beta=0.75, k=2)
         self.pool2 = nn.MaxPool2d(kernel_size=3, stride=2)
@@ -114,6 +125,7 @@ class AlexNet(nn.Module):
         
 
         # 全连接层
+        self.flatten = nn.Flatten()
         # 第六层 13*13*256 -> 4096 ReLU → Dropout
         self.fc6 = nn.Linear(in_features=9216, out_features=4096)
         self.relu6 = nn.ReLU()
@@ -147,7 +159,7 @@ class AlexNet(nn.Module):
         x = self.conv5(x)
         x = self.pool5(x)
         # 第六层
-        x = x.view(-1, 9216)
+        x = self.flatten(x)
         x = self.fc6(x)
         x = self.relu6(x)
         x = self.dropout6(x)
@@ -164,14 +176,6 @@ if __name__ == '__main__':
     model = AlexNet()
     summary(model, (3, 227, 227), device='cuda')
 ```
-
-
-
-
-
-
-
-
 
 ## 参考资料
 

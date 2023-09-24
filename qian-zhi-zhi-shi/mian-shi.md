@@ -20,8 +20,10 @@
 *
 
 1. 什么是非极大值抑制 (NMS)
+2.  感受野的计算公式
 
-
+    $$Feature \ Map = \frac{Input + 2*Padding-Filter}{Stride} - 1$$
+3.
 
 
 
