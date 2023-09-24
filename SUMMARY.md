@@ -6,8 +6,12 @@
 
 * [深度学习基础](qian-zhi-zhi-shi/shen-du-xue-xi-ji-chu.md)
 * [经典卷积神经网络](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/README.md)
-  * [LeNet-5](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/lenet-5.md)
+  * [LeNet5](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/lenet5.md)
   * [AlexNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/alexnet.md)
+  * [ZFNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/zfnet.md)
+  * [VGGNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/vggnet.md)
+  * [GoogLeNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/googlenet.md)
+  * [ResNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 目标检测

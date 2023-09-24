@@ -1,8 +1,8 @@
 ---
-description: 1998 - Gradient-Based Learning Applied to Document Recognition
+description: 1998 CNN开山之作
 ---
 
-# LeNet-5
+# LeNet5
 
 [Paper: Gradient-Based Learning Applied to Document Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf)
 
