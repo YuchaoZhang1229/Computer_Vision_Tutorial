@@ -43,6 +43,8 @@ description: ImageNet 2012冠军 Hinton团队 多伦多大学
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ## 卷积神经网络
 
 **卷积层:**&#x20;
