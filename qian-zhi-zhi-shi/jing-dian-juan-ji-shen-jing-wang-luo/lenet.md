@@ -16,6 +16,8 @@
 
 <figure><img src="../../.gitbook/assets/lenet-5.webp" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
 ## MNIST
 
 * 50000个训练数据
