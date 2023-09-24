@@ -17,7 +17,19 @@
 * 建信金科、中银金科, 农行, 邮储
 * 同程艺龙
 * 企查查
-*
+
+[项目 树莓派slam无人驾驶ROS小车](https://www.bilibili.com/video/BV1ub411i7vZ/?p=6\&spm\_id\_from=pageDriver\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+
+* ROS开源系统
+* 摄像头-单目
+* 激光雷达
+* 主控版 树莓派&#x20;
+* 运动部分 stm32
+* 计算机视觉 opencv
+* 无人驾驶
+* 地图构建
+
+
 
 1. 什么是非极大值抑制 (NMS)
 2.  感受野的计算公式
