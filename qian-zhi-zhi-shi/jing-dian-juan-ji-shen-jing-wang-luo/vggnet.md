@@ -47,7 +47,7 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
   * no normalisation
   * 3 full-connected layers
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -78,23 +78,25 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
 * 随机裁剪, 平移变换
 * 颜色, 光照变换
 
-Training image size
+Training image size 没看懂
 
 * 方案一: 固定S
 * 方案二: 多尺度S
 
-### 测试细节 Testing
+### 测试细节 Testing 1:04:40
 
+* 看完Overfeat可能就懂了&#x20;
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## VGGNet 应用
 
 * 迁移学习
+  * 用VGG作为特征提取器
   * 以VGG作为迁移学习的基模型
   * 仅需把最后一层全连接层换成自己类别个数
 * 可解释性分析
   * 方法一
-    * 用VGG作为特征提取器
     * 把每张图片编码成4096维向量
     * 查看这些向量之间是否存在一些关系
     * 将其降维到二维 （TSNE， PCA）
