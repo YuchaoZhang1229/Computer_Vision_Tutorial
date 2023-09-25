@@ -1,12 +1,12 @@
+---
+description: https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/Pooling.html
+---
+
 # 深度学习基础
 
-https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/Pooling.html
+### 卷积神经网络-CNN
 
-## 卷积模型
-
-### Convolution-卷积层
-
-典型卷积神经网络结构:
+**典型卷积神经网络结构:**
 
 * 多层卷积和池化层组合 + 全连接层
 * ReLu 激活函数一般加在卷积或者全连接层的输出上, 网络中通常还会加入 Dropout 来防止过拟合
@@ -25,7 +25,7 @@ https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/Pooling.html
 * Max Pooling: 从输入特征图的某个区域子块中选择值最大的像素点作为最大池化结果
 * K-max Pooling: 对输入特征图的区域子块中像素点取前K个最大值，常用于自然语言处理中的文本特征提取
 
-**归一化层:** Batch Norma
+**归一化层:** Batch Normalization
 
 **线性层:** Linear
 

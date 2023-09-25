@@ -5,18 +5,18 @@
 ## 前置知识
 
 * [深度学习基础](qian-zhi-zhi-shi/shen-du-xue-xi-ji-chu.md)
-* [经典卷积神经网络](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/README.md)
-  * [LeNet5](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/lenet.md)
-  * [AlexNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/alexnet.md)
-  * [ZFNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/zfnet.md)
-  * [VGGNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/vggnet.md)
-  * [GoogLeNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/googlenet.md)
-  * [ResNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
-  * [SENet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 图像分类
 
+* [经典卷积神经网络](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/README.md)
+  * [LeNet5](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/lenet5.md)
+  * [AlexNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/alexnet.md)
+  * [ZFNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/zfnet.md)
+  * [VGGNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/vggnet.md)
+  * [GoogLeNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet.md)
+  * [ResNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
+  * [SENet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
 * [Page 1](tu-xiang-fen-lei/page-1.md)
 
 ## 目标检测
