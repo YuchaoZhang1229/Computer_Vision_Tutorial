@@ -31,17 +31,17 @@
   * 1 objectness prediction
   * 80 class predictions
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/YOLOV3.png" alt=""><figcaption></figcaption></figure>
 
 ### YOLO-V3训练过程
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>训练过程</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>训练过程</p></figcaption></figure>
 
 ### YOLO-V3测试过程
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>测试过程</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>测试过程</p></figcaption></figure>
 
 ## 损失函数
 
@@ -49,7 +49,7 @@
 
 **位置损失**仍然使用**平方差损失**
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 IoU vs L2损失
 
