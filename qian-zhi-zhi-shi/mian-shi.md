@@ -37,11 +37,45 @@
     $$Feature \ Map = \frac{Input + 2*Padding-Filter}{Stride} - 1$$
 3.
 
+## 深度学习常识
+
+1. BN, FPN, RPN, RPN, focal loss, softmax的损失函数和推导, 反向传播
+2. 优化器
+   1. sgd
+   2. adam
+   3. Momentum, Adagrad
+3. CNN, RNN, GAN
+4. SoftNMS, loU伪代码
+5. 网络模型调参技巧
+
+CNN
+
+VGG, ResNet, DenseNet, SENet, Faster R-CNN, DeepLab
+
+GAN, RNN, LSTM, GRU
+
+## OpenCV常识
+
+hog
+
+## 项目经验
+
+校招
+
+1. 算法以及工程基础能力, 多刷leetcode以及github的深度学习开源题库
+2. 数据结构以及图像处理
+3. 了解面试公司JD
+4. 论文阅读量
+5. 图像常见算法, 如霍夫曼变换, haar特征, 傅里叶等
+
+社招
+
+1. 跨平台模型训练部署, 嵌入式部署
+2. 重点问简历上的项目
 
 
 
 
-在CV里其实方向也非常多，传统图像处理，识别，检测，分割，单目标跟踪，多目标跟踪，人脸相关任务（属性，情绪，识别等等），GAN，显著性检测，异常检测，超分辨率，OCR，图像复原（去雾，去雨，去阴影，补全图像...)，深度估计，ReID，SLAM，以及通用技术模型量化，剪枝，模型蒸馏，meta learning，迁移学习……
 
 
 
