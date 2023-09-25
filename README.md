@@ -7,15 +7,16 @@
 
 ## 计算机视觉的任务
 
-* 单个对象
-  * 图像分类 (Classification)
-  * 图像分类和定位 (Classification+Localization)
-* 多个对象
-  * 目标检测 (Object Detection)
-  * 图像分割 (Segmentation)
-    * 语义分割 (Semantic Segmentation) 同一个物体割到一起, 不区分每个物体
-    * 实例分割 (Instance Segmentation) 区分每个物体
+* 图像分类
+  * MINST, CIFAR, ImageNet
+* 目标检测 (定位和识别)
+  * ImageNet, PASCAL, COCO
+* 语义分割
+  * PASCAL, COCO
+* 实例分割
+  * PASCAL, COCO
 * 关键点检测
+  * COCO
 
 ## 深度学习常识
 
