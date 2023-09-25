@@ -12,6 +12,7 @@
   * [VGGNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/vggnet.md)
   * [GoogLeNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/googlenet.md)
   * [ResNet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
+  * [SENet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 目标检测

@@ -1,5 +1,7 @@
 # 经典卷积神经网络
 
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
 ## 早期探索
 
 * LeNet
