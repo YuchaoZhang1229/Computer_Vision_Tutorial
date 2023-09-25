@@ -8,18 +8,36 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
 
 ## VGGNet 创新点
 
-* 3 × 3 卷积
+* 多层 3 × 3 小卷积核取代大卷积核
+* VGG-16， VGG-19 迁移学习的基模型
+* 模型简洁， 常规经典CNN结构的极致但参数量较大，集中在 FC1 略显臃肿
 
 ## VGGNet 网络结构
 
+* 输入 224 × 224 RGB 图像
 * 卷积层+最大池化（2 + 2 + 3 + 3 + 3 ）+ 全连接层（3）
 * Total memory： 96 MB/image
 * Total params：138M parameters
 * 全部使用 3 × 3 卷积
   * 最小的能包含左右上下和中心点的卷积核
   * stride 1 - 没有信息丢失
+  * padding 1&#x20;
   * 用两层 3 × 3 卷积代替原来的一层 5 × 5 卷积
+  * 以此类推 用三层 3 × 3 卷积代替原来的一层 7 × 7 卷积
   * 模型变深， 非线性能力变强， 参数数量更少
+* 5个最大池化层
+  * kernel\_size-2
+  * stride-2
+* 3个全连接层
+* 4096 → 4096 → 1000 (softmax)
+* 全部使用 ReLU 激活函数
+* 1 × 1 卷积的理解
+  * 增加非线性的一种方法
+  * 不会影响 feature map 的尺寸的
+  * 本身是线性变换, 加激活函数可以增加非线性
+  * 论文 Network in Network (2014) 重要
+    * 1 × 1 卷积
+    * 全局平均池化
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -33,11 +51,39 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-## VGGNet 训练细节
+## VGGNet 训练和评估细节
 
+### 训练 Training
 
+优化多分类交叉熵损失函数使用 mini-batch gradient descend
+
+* Batch Size - 256
+* 动量 (momentum) - 0.9
+* weight decay - 5 × 10^(-4) → 正则化
+* 学习率 - 0.01
+  * 当精读停止提升的时候, 将学习率除以10
+* 74个eopchs就收敛了
+
+网络权重的初始化 (坏的初始化会让模型停止学习由于梯度的不稳定)
+
+* 随机初始化: 在均值为0和方差为0.01的正态分布中随机取值, 偏置项设为0
+* 使用随机初始化先训练浅模型 (11层)
+* 训练深模型的时候使用浅模型前四个卷积层和三个全连接层的权重作为初始化, 其他层使用随机初始化
+
+数据增强
+
+* 水平翻转
+* 随机裁剪, 平移变换
+* 颜色, 光照变换
+
+Training image size
+
+* 方案一: 固定S
+* 方案二: 多尺度S
+
+### 测试细节 Testing
 
 
 
@@ -54,6 +100,13 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
     * 将其降维到二维 （TSNE， PCA）
   * 方法二-各层输出结果可视化
     * 可视化分析， 高亮处理，
+
+## 论文精读总结
+
+* ConvNets 能成功源于: 大规模公开数据集 ImageNet, 高性能的算力 GPU, 大规模分布式集群&#x20;
+* 获得更好的 accuracy 的两个分支
+  * ZFNet 和 GoogleNet 用更小的感受野 (receptive window size) 和更小的步长 (stride)
+  * 训练和测试的时候 (densely over the whole image) 和 (over multiple scale )
 
 ## 搭建VGG16网络
 

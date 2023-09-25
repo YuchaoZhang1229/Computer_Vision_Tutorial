@@ -15,6 +15,10 @@
   * [SENet](qian-zhi-zhi-shi/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
+## 图像分类
+
+* [Page 1](tu-xiang-fen-lei/page-1.md)
+
 ## 目标检测
 
 * [概述](mu-biao-jian-ce/gai-shu.md)
