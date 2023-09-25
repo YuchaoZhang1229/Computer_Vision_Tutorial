@@ -85,7 +85,8 @@ Training image size 没看懂
 
 ### 测试细节 Testing 1:04:40
 
-* 看完Overfeat可能就懂了&#x20;
+* dense-看完Overfeat可能就懂了&#x20;
+* multi-crop-GoogleNet
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
