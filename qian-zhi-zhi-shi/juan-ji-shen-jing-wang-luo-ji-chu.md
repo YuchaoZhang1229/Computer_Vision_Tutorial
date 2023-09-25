@@ -2,9 +2,7 @@
 description: https://paddlepedia.readthedocs.io/en/latest/tutorials/CNN/Pooling.html
 ---
 
-# 深度学习基础
-
-### 卷积神经网络-CNN
+# 卷积神经网络基础
 
 **典型卷积神经网络结构:**
 

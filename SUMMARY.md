@@ -4,7 +4,8 @@
 
 ## 前置知识
 
-* [深度学习基础](qian-zhi-zhi-shi/shen-du-xue-xi-ji-chu.md)
+* [机器学习](qian-zhi-zhi-shi/ji-qi-xue-xi.md)
+* [卷积神经网络基础](qian-zhi-zhi-shi/juan-ji-shen-jing-wang-luo-ji-chu.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
 ## 图像分类
