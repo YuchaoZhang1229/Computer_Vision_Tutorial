@@ -10,7 +10,7 @@ description: 1998 CNN开山之作
 
 * 卷积层-提取图像特征
 * 全连接层-用提取出来的特征进行分类
-* 奠定了基础: 多次卷积和池化的组合 → 全连接 → 输出
+* 奠定了 CNN 基础基础结构: (卷积 + normalization + 最大池化) × n + 全连接层 × m
 
 <figure><img src="../../.gitbook/assets/lenet-5.webp" alt=""><figcaption></figcaption></figure>
 
