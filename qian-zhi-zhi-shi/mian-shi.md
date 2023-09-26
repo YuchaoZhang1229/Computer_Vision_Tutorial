@@ -1,3 +1,7 @@
+---
+description: 面试宝典 https://github.com/amusi/Deep-Learning-Interview-Book
+---
+
 # 面试
 
 苏州
@@ -20,6 +24,10 @@
 * 同程艺龙
 * 企查查
 
+
+
+##
+
 [项目 树莓派slam无人驾驶ROS小车](https://www.bilibili.com/video/BV1ub411i7vZ/?p=6\&spm\_id\_from=pageDriver\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
 
 * ROS开源系统
@@ -37,7 +45,20 @@
 2.  感受野的计算公式
 
     $$Feature \ Map = \frac{Input + 2*Padding-Filter}{Stride} - 1$$
-3.
+
+
+
+## 机器学习常识
+
+1. 过拟合/欠拟合
+2. 正则化
+3. LR/Sigmoid/梯度下降
+   1. sigmoid
+4. 数模型
+   1. 决策树
+   2. 随机森林
+5. Bagging, Boosting
+   1. 思想
 
 ## 深度学习常识
 
