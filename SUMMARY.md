@@ -15,10 +15,13 @@
   * [AlexNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/alexnet.md)
   * [ZFNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/zfnet.md)
   * [VGGNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/vggnet.md)
-  * [GoogLeNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet.md)
+  * [GoogLeNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/README.md)
+    * [Inception V2-V3](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/inception-v2-v3.md)
+    * [Inception V4](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/inception-v4.md)
+    * [Inception-ResNet V1-V2](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/inception-resnet-v1-v2.md)
+    * [XInception](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/xinception.md)
   * [ResNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
   * [SENet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
-* [Page 1](tu-xiang-fen-lei/page-1.md)
 
 ## 目标检测
 
