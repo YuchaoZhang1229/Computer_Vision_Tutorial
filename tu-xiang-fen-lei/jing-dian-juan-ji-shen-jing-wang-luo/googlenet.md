@@ -29,7 +29,7 @@ V1 (GoogleNet) → BN-Inception → V2 → V3 → V4 → Inception-ResNet → XI
 * 浅层分类器 L = L(最后) + 0.3 × L(辅1) + 0.3 × L(辅2)
   * 后面被证实没有什么用, 在Inception v2-v3 中去掉了&#x20;
 
-
+<figure><img src="../../.gitbook/assets/Screen_Shot_2020-06-22_at_3.28.59_PM.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
