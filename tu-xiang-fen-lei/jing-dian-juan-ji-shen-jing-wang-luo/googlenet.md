@@ -31,7 +31,7 @@ V1 (GoogleNet) → BN-Inception → V2 → V3 → V4 → Inception-ResNet → XI
 * 目标检测阶段应用 R-CNN 类似的方法
   * muti-box prediction
 
-
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ## Inception 模块
 
