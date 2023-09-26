@@ -54,6 +54,22 @@ V1 (GoogleNet) → BN-Inception → V2 → V3 → V4 → Inception-ResNet → XI
 * 用稀疏, 分散的网络取代以前庞大密集臃肿的网络
 * 用稀疏连接取代密集连接 (Arora et al. \[2], Hebbian pricipal)
 
+## 拓展资料
+
+\[6]: Rich feature hierarchies for accurate object detection and semantic segmentation R-CNN
+
+\[20]: Selective Search 生成目标检测候选框的 Region Proposal 方法
+
+\[12]: 1 × 1 卷积 Global Average Pooling
+
+\[14]: Overfeat 定位模型 2013年ILSVRC定位竞赛冠军
+
+\[9]: AlexNet
+
+\[10]-\[11]: LeNet-5
+
+\[21]: ZFNet 2013年ILSVRC分类竞赛冠军
+
 ## 参考资料
 
 * [同济子豪兄](https://www.bilibili.com/video/BV17g411L7Se/?p=2\&spm\_id\_from=pageDriver\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
