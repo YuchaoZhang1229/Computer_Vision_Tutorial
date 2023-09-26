@@ -21,6 +21,7 @@
     * [Inception-ResNet V1-V2](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/inception-resnet-v1-v2.md)
     * [XInception](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/googlenet/xinception.md)
   * [ResNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
+  * [DenseNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/densenet.md)
   * [SENet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
 
 ## 目标检测
