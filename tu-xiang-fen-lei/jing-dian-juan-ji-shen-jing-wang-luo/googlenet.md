@@ -13,23 +13,23 @@ V1 (GoogleNet) → BN-Inception → V2 → V3 → V4 → Inception-ResNet → XI
 ## GoogLeNet 创新点
 
 * Inception 模块
+* 目标检测阶段应用 R-CNN 类似的方法
+  * muti-box prediction
 
 ## GoogLeNet 网络结构
 
 * **先用传统 CNN 结构, 后面用 Inception 模块堆叠**
 * 增加深度 (层数) 和宽度 (卷积核个数) 的同时减少计算量, 比 2012 年的 AlexNet 参数少 12 倍
-* 重要启发源文献1-Network in Network&#x20;
-  * 1 × 1 卷积 + ReLU
-    * 降维
-    * 减少参数运算律
-    * 增加模型深度, 提高非线性表达能力
-  * Global Average Pooling 取代全连接层
-* 重要启发源文献1-Provable Bounds for Learning Some Deep representions
-  * 理论研究
-  * 用稀疏, 分散的网络取代以前庞大密集臃肿的网络
-  * 用稀疏连接取代密集连接 (Arora et al. \[2], Hebbian pricipal)
-* 目标检测阶段应用 R-CNN 类似的方法
-  * muti-box prediction
+* 输入是 224 × 224 × 3 的 RGB 图像
+* 所有卷积都使用 ReLu 激活函数
+* 用全局平均池化 (GAP) 代替全连接层
+  * 偏于 fine-tune 迁移学习
+  * 提升了 0.6% 的 Top-1 准确率
+  * 仍然使用 Dropout 层
+* 浅层分类器 L = L(最后) + 0.3 × L(辅1) + 0.3 × L(辅2)
+  * 后面被证实没有什么用, 在Inception v2-v3 中去掉了&#x20;
+
+
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
@@ -40,7 +40,19 @@ V1 (GoogleNet) → BN-Inception → V2 → V3 → V4 → Inception-ResNet → XI
 
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
+重要启发源文献1-Network in Network&#x20;
 
+* 1 × 1 卷积 + ReLU
+  * 降维
+  * 减少参数运算律
+  * 增加模型深度, 提高非线性表达能力
+* Global Average Pooling 取代全连接层
+
+重要启发源文献1-Provable Bounds for Learning Some Deep representions
+
+* 理论研究
+* 用稀疏, 分散的网络取代以前庞大密集臃肿的网络
+* 用稀疏连接取代密集连接 (Arora et al. \[2], Hebbian pricipal)
 
 ## 参考资料
 
