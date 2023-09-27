@@ -8,6 +8,10 @@
 * [卷积神经网络基础](qian-zhi-zhi-shi/juan-ji-shen-jing-wang-luo-ji-chu.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
+## 数据增强
+
+* [Mixup](shu-ju-zeng-qiang/mixup.md)
+
 ## 图像分类
 
 * [经典卷积神经网络](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/README.md)
