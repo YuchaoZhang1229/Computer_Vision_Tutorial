@@ -10,17 +10,10 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 
 ## ResNet 创新点
 
-* 残差模块-解决了网络退化现象
-
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
-
-## ResNet 网络结构
-
-
+* 残差模块
+  * 易于优化收敛
+  * 解决了网络退化现象
+  * 可以很深准确率大大提升
 
 ## 残差模块
 
@@ -42,9 +35,25 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
   * ResNet 相当于几个浅层网络的集成
   * skip connection 可以实现不同分辨率特征的组合 (FPN DenseNet)
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-## 论文精度
+## ResNet 训练与测试
+
+训练
+
+* 数据增强
+* SGD mini-batch 256
+* learning rate 0.1 遇到瓶颈时除以10&#x20;
+* weight decay 0.0001, momentum 0.9
+* 使用 BN 层 不用 dropout
+
+测试
+
+* 多尺度裁剪与结果融合
+* 10-crop
+* fully-convolutional form
+
+## 论文精读
 
 **阻碍1:** 梯度消失/梯度爆炸问题会阻碍模型开始训练的收敛, 但是他已经可以通过各种各样的**归一化技巧**和**权重初始化技巧**来解决
 
@@ -58,8 +67,6 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 * 提出了一种深度残差网络框架来解决
   * 过去直接拟合 H(x)
   * 现在拟合残差 F(x) = H(x) - x
-
-&#x20;
 
 
 
@@ -86,6 +93,12 @@ Xiangyu Zhang
 
 * 2016与孙健加入旷视
 * Shufflenet v1-v2 轻量级网络 人脸解锁
+
+![](../../.gitbook/assets/image.png)
+
+![](<../../.gitbook/assets/image (1).png>)
+
+![](<../../.gitbook/assets/image (2).png>)
 
 ## 参考资料
 
