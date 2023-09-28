@@ -1,5 +1,5 @@
 ---
-description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研究院
+description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研究院 152层
 ---
 
 # ResNet
@@ -36,10 +36,16 @@ Xiangyu Zhang
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
+##
+
 ## ResNet 网络结构
 
 
 
 ## 残差模块
+
+* F(x) is a residual mapping w.r.t. identity
+  * 在 x 的基础上优化
+  * 如果恒等模块 x 足够好的话, 残差模块 F(x) 可以为 0
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

@@ -1,5 +1,5 @@
 ---
-description: ImageNet 2012冠军 Hinton团队 多伦多大学
+description: ImageNet 2012冠军 Hinton团队 多伦多大学 8层
 ---
 
 # AlexNet

@@ -1,5 +1,5 @@
 ---
-description: ImageNet 2014年冠军 Inception模块 谷歌
+description: ImageNet 2014年冠军 Inception模块 谷歌 22层
 ---
 
 # GoogLeNet
