@@ -31,7 +31,10 @@ Xiangyu Zhang
 ## ResNet 创新点
 
 * 残差模块-解决了网络退化现象
-*
+
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ## ResNet 网络结构
 
