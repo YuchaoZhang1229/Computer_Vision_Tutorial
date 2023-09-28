@@ -30,7 +30,7 @@ Object Detection in 20 Years: A Survey
 * SPP-Net
 * Fast R-CNN
 * Faster  R-CNN
-* R-FCN
+* FCN
 
 
 
