@@ -14,6 +14,20 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 * COCO Detection: 11% better than 2nd
 * COCO Segmentation: 12% better than 2nd
 
+Kaiming He
+
+* ResNet
+* Faster R-CNN 两个阶段目标检测
+* Mask R-CNN 检测 分割 人体关键点检测
+* RetinaNet-Focal Loss 密集目标
+* Feature Pyramid Network-Fast R-CNN 到 Faster R-CNN的过度模型
+* SPPNet
+
+Xiangyu Zhang
+
+* 2016与孙健加入旷视
+* Shufflenet v1-v2 轻量级网络 人脸解锁
+
 ## ResNet 创新点
 
 * 残差模块-解决了网络退化现象
@@ -25,3 +39,4 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 
 ## 残差模块
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

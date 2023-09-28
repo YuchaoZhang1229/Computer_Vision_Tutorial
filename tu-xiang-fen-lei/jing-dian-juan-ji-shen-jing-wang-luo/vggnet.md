@@ -88,7 +88,7 @@ Training image size 没看懂
 * dense-看完Overfeat可能就懂了&#x20;
 * multi-crop-GoogleNet
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## VGGNet 应用
 
