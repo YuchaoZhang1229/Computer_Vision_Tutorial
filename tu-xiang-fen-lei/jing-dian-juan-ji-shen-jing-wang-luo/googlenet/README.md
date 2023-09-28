@@ -4,7 +4,7 @@ description: ImageNet 2014年冠军 Inception模块 谷歌 22层
 
 # GoogLeNet
 
-Paper: Going deeper with convolutions
+**Paper: Going deeper with convolutions**
 
 ## Inception 技术演进
 

@@ -44,9 +44,28 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+## 论文精度
+
+**阻碍1:** 梯度消失/梯度爆炸问题会阻碍模型开始训练的收敛, 但是他已经可以通过各种各样的**归一化技巧**和**权重初始化技巧**来解决
+
+* 归一化技巧: Batch Normalization
+* 权重初始化技巧: Xavier 初始化, MSRA初始化
+
+**阻碍2:** 当网络变深的时候, 会出现网络退化问题 (degradation)
+
+* 网络越深, 训练集上的误差越大
+* 不是由过拟合或梯度消失引起的
+* 提出了一种深度残差网络框架来解决
+  * 过去直接拟合 H(x)
+  * 现在拟合残差 F(x) = H(x) - x
+
+&#x20;
+
+
+
 ## **拓展资料**
 
-**1st places** in all five main tracks
+**1st place** in all five main tracks
 
 * ImageNet Classification: "Ultra-deep" **152-layer** nets
 * ImageNet Detection: 16% better than 2nd
