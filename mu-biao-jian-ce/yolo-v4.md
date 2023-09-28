@@ -22,11 +22,11 @@ CSPDarknet53就是将CSP结构融入了Darknet53中. CSP结构是在CSPNet (Cros
 
 PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融合) 的基础上加上了从底到顶的信息融合
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## YOLOv4
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
