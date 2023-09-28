@@ -11,6 +11,13 @@
 ## 数据增强
 
 * [Mixup](shu-ju-zeng-qiang/mixup.md)
+* [Random image cropping and patching](shu-ju-zeng-qiang/random-image-cropping-and-patching.md)
+
+## 训练技巧
+
+* [Warmup](xun-lian-ji-qiao/warmup.md)
+* [Linear Scaling Learning Rate](xun-lian-ji-qiao/linear-scaling-learning-rate.md)
+* [Label Smoothing](xun-lian-ji-qiao/label-smoothing.md)
 
 ## 图像分类
 
