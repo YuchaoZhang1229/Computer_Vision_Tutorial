@@ -94,9 +94,9 @@ Xiangyu Zhang
 * 2016与孙健加入旷视
 * Shufflenet v1-v2 轻量级网络 人脸解锁
 
-![](../../.gitbook/assets/image.png)
-
 ![](<../../.gitbook/assets/image (1).png>)
+
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (2).png>)
 

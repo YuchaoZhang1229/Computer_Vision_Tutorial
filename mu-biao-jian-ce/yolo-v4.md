@@ -13,12 +13,12 @@
 * **Neck:** 采用了SPP模块以及PAN模块
 * **Head:** 没有变化
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 CSPDarknet53就是将CSP结构融入了Darknet53中. CSP结构是在CSPNet (Cross Stage Partial Network)论文中提出的
 
 * 思想来源shuffleNetv2 旷世科技孙健
-* ![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+* ![](<../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融合) 的基础上加上了从底到顶的信息融合
 

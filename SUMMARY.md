@@ -11,13 +11,19 @@
 ## 数据增强
 
 * [Mixup](shu-ju-zeng-qiang/mixup.md)
-* [Random image cropping and patching](shu-ju-zeng-qiang/random-image-cropping-and-patching.md)
+* [RICAP](shu-ju-zeng-qiang/ricap.md)
+* [Cutout](shu-ju-zeng-qiang/cutout.md)
+* [Random Erasing](shu-ju-zeng-qiang/random-erasing.md)
+* [AutoAugment](shu-ju-zeng-qiang/autoaugment.md)
 
 ## 训练技巧
 
 * [Warmup](xun-lian-ji-qiao/warmup.md)
 * [Linear Scaling Learning Rate](xun-lian-ji-qiao/linear-scaling-learning-rate.md)
+* [Cosine Learning Rate Decay](xun-lian-ji-qiao/cosine-learning-rate-decay.md)
 * [Label Smoothing](xun-lian-ji-qiao/label-smoothing.md)
+* [Knowledge Distiallation](xun-lian-ji-qiao/knowledge-distiallation.md)
+* [其他 Tricks](xun-lian-ji-qiao/qi-ta-tricks.md)
 
 ## 图像分类
 
