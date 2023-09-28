@@ -51,7 +51,7 @@ description: ImageNet 2014亚军 VGG16和VGG19 牛津大学
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## VGGNet 训练和评估细节
 
@@ -88,7 +88,7 @@ Training image size 没看懂
 * dense-看完Overfeat可能就懂了&#x20;
 * multi-crop-GoogleNet
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## VGGNet 应用
 
