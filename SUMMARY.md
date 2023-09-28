@@ -40,6 +40,7 @@
   * [ResNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/resnet.md)
   * [DenseNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/densenet.md)
   * [SENet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
+  * [总结](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/zong-jie.md)
 
 ## 目标检测
 
