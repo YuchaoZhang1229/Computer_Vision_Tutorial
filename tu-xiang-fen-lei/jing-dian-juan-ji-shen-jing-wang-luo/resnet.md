@@ -37,7 +37,7 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
   * ResNet 相当于几个浅层网络的集成
   * skip connection 可以实现不同分辨率特征的组合 (FPN DenseNet)
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## ResNet 训练与测试
 
@@ -96,11 +96,11 @@ Xiangyu Zhang
 * 2016与孙健加入旷视
 * Shufflenet v1-v2 轻量级网络 人脸解锁
 
-![](<../../.gitbook/assets/image (1).png>)
-
 ![](<../../.gitbook/assets/image (1) (1).png>)
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (1) (1) (1).png>)
+
+![](<../../.gitbook/assets/image (2) (1).png>)
 
 ## 参考资料
 

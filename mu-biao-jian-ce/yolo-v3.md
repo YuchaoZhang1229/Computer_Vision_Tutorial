@@ -1,11 +1,30 @@
 # YOLO-V3
 
-## 参考资料
+## YOLOV3 整体结构
 
-* [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)
-* [B站 Bubbliiiing](https://www.bilibili.com/video/BV1XJ411D7wF?p=3\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
-* [CSDN Bubbliiiing](https://blog.csdn.net/weixin\_44791964/article/details/103276106)
-* [YOLO-V3 精度论文 + 代码复现](https://www.bilibili.com/video/BV1Vg411V7bJ/?spm\_id\_from=333.337.search-card.all.click)
+* **DarkNet53:** 对输入进来的图片进行特征提取, 获得三个有效特征层 (主干特征提取网络)
+* **FPN:** 对获取到的三个有效特征层, 上采样后进行特征融合 (加强特征融合网络)
+* **YOLO Head:** 对获得到的三个加强过的特征层, 预测三个先验框和物体的种类
+  * (52, 52, 255) - 大物体
+  * (26, 26, 255) - 中物体
+  * (13, 13, 255)  - 小物体
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## YOLOV3 网路结构解析
+
+### 1. 主干网络 DarkNet53
+
+* **使用了残差网络 Residual**
+  * 对 input 做 1 × 1 的卷积和 3 × 3 的卷积后, 再加上 input (残差边不做任何处理)
+  * 好处: 1. 容易优化, 2. 增加深度能提高准确率 3. 残差边是恒等映射, 梯度为1, 有效缓解了梯度消失问题&#x20;
+* 每一个DarknetConv2D后面都紧跟了**BatchNormalization**标准化与**LeakyReLU**部分
+
+
+
+### 2. FPN 特征金字塔
+
+
 
 ## YOLO-V3主要改进
 
@@ -30,7 +49,7 @@
   * 1 objectness prediction
   * 80 class predictions
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/YOLOV3.png" alt=""><figcaption></figcaption></figure>
 
@@ -82,5 +101,10 @@ IoU vs L2损失
 * 主要改进是在网络结构中添加了一个SPP模块
 * 此外还有更好地训练策略, 更多的数据增强方法, 自动模型剪枝
 
+## 参考资料
 
+* [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)
+* [B站 Bubbliiiing](https://www.bilibili.com/video/BV1XJ411D7wF?p=3\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [CSDN Bubbliiiing](https://blog.csdn.net/weixin\_44791964/article/details/103276106)
+* [YOLO-V3 精度论文 + 代码复现](https://www.bilibili.com/video/BV1Vg411V7bJ/?spm\_id\_from=333.337.search-card.all.click)
 
