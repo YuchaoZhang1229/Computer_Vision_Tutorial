@@ -1,12 +1,11 @@
 # YOLO-V3
 
-[YOLO-V3 精度论文 + 代码复现](https://www.bilibili.com/video/BV1Vg411V7bJ/?spm\_id\_from=333.337.search-card.all.click)
-
-## 参考博客
+## 参考资料
 
 * [YOLOv3: An Incremental Improvement](https://arxiv.org/abs/1804.02767)
-* [https://medium.com/image-processing-and-ml-note/yolov3-you-only-look-once-object-detection-13a312c7336f](https://medium.com/image-processing-and-ml-note/yolov3-you-only-look-once-object-detection-13a312c7336f)
-* [https://zhuanlan.zhihu.com/p/76802514](https://zhuanlan.zhihu.com/p/76802514)
+* [B站 Bubbliiiing](https://www.bilibili.com/video/BV1XJ411D7wF?p=3\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [CSDN Bubbliiiing](https://blog.csdn.net/weixin\_44791964/article/details/103276106)
+* [YOLO-V3 精度论文 + 代码复现](https://www.bilibili.com/video/BV1Vg411V7bJ/?spm\_id\_from=333.337.search-card.all.click)
 
 ## YOLO-V3主要改进
 
