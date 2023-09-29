@@ -2,7 +2,7 @@
 
 ## YOLOV3 整体结构
 
-* **DarkNet53:** 对输入进来的图片进行特征提取, 获得三个有效特征层 (主干特征提取网络)
+* **DarkNet53 (backbone):** 对输入进来的图片进行特征提取, 获得三个有效特征层 (主干特征提取网络)
 * **FPN:** 对获取到的三个有效特征层, 上采样后进行特征融合 (加强特征融合网络)
 * **YOLO Head:** 对获得到的三个加强过的特征层, 预测三个先验框和物体的种类
   * (52, 52, 255) - 大物体
@@ -20,7 +20,7 @@
   * 好处: 1. 容易优化, 2. 增加深度能提高准确率 3. 残差边是恒等映射, 梯度为1, 有效缓解了梯度消失问题&#x20;
 * 每一个DarknetConv2D后面都紧跟了**BatchNormalization**标准化与**LeakyReLU**部分
 
-
+<figure><img src="https://production-media.paperswithcode.com/methods/Screen_Shot_2020-06-24_at_12.53.56_PM_QQoF5AO.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. FPN 特征金字塔
 
