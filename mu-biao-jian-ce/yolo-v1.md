@@ -1,5 +1,11 @@
 # YOLO-V1
 
+{% embed url="https://blog.csdn.net/weixin_44791964/article/details/102646387?spm=1001.2014.3001.5502" %}
+
+{% embed url="https://blog.csdn.net/weixin_44791964/article/details/102687531?spm=1001.2014.3001.5502" %}
+
+{% embed url="https://blog.csdn.net/weixin_44791964/article/details/102702470?spm=1001.2014.3001.5502" %}
+
 ## 参考博客
 
 * [https://cuijiahua.com/blog/2021/05/dl-basics-5.html](https://cuijiahua.com/blog/2021/05/dl-basics-5.html)

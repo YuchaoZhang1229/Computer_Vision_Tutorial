@@ -4,6 +4,8 @@ description: ImageNet 2015年冠军 残差模块 何凯明团队 微软亚洲研
 
 # ResNet
 
+{% embed url="https://blog.csdn.net/weixin_44791964/article/details/102790260?spm=1001.2014.3001.5502" %}
+
 **Paper: Deep Residual Learning for Image Recognition**
 
 **后续变体:** ResNetXt, Inception-ResNet, ResNetXt-Attention, ResNetXt WSL, DenseNet, SENet

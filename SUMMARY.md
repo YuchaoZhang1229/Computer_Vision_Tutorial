@@ -46,6 +46,7 @@
 
 * [概述](mu-biao-jian-ce/gai-shu.md)
 * [评价指标](mu-biao-jian-ce/ping-jia-zhi-biao.md)
+* [SSD](mu-biao-jian-ce/ssd.md)
 * [YOLO-V1](mu-biao-jian-ce/yolo-v1.md)
 * [YOLO-V2](mu-biao-jian-ce/yolo-v2.md)
 * [YOLO-V3](mu-biao-jian-ce/yolo-v3.md)
