@@ -1,6 +1,6 @@
 # YOLO-V3
 
-## YOLO-V3主要改进
+YOLO-V3主要改进
 
 <mark style="color:red;">一般使用 yolov3-spp-ultralytics</mark>
 
@@ -52,7 +52,7 @@ FPN 提取了 Darknet53 主干部分的**最后三层**作为特征层, 它可�
 * (26, 26, 255)&#x20;
 * (13, 13, 255)
 
-## 三、预测结果的解码
+## 三、测试过程：预测结果的解码
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>测试过程</p></figcaption></figure>
 
@@ -62,9 +62,7 @@ FPN 提取了 Darknet53 主干部分的**最后三层**作为特征层, 它可�
 * 对上上述先验框进行解码
 * 然后进行得分筛选与非极大抑制
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-## 四、其他
+## 四、训练过程
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
