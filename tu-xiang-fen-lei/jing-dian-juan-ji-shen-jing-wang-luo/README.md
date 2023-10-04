@@ -47,4 +47,5 @@
 
 ## 参考资料
 
-* [https://www.bilibili.com/video/BV1E54y1B7Ub/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d](https://www.bilibili.com/video/BV1E54y1B7Ub/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [深度学习之卷积神经网络](https://www.bilibili.com/video/BV1AJ411Q72b/?p=2\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [卷积神经网络的结构发展](https://www.bilibili.com/video/BV1E54y1B7Ub/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
