@@ -22,3 +22,4 @@ DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有
 ## 参考资料
 
 * [Introduction to DenseNets (Dense CNN)](https://www.analyticsvidhya.com/blog/2022/03/introduction-to-densenets-dense-cnn/)
+* [Pytorch DenseNet](https://pytorch.org/hub/pytorch\_vision\_densenet/)
