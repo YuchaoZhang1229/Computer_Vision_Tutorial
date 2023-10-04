@@ -1,5 +1,7 @@
 # DenseNet
 
+[Paper: Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
+
 ## 一、什么是 DenseNet?
 
 DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有一些本质区别。ResNet 使用的是加法方法，这意味着它们将**之前的输出作为未来层的输入**，而 DenseNet 则将**之前的所有输出作为未来层的输入。**
