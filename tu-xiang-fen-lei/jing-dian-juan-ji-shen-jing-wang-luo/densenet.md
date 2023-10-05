@@ -10,7 +10,7 @@ description: CVPR 2017 Best Paper
 
 DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有一些本质区别。ResNet 使用的是加法方法，这意味着它们将**之前的输出作为未来层的输入**，而 DenseNet 则将**之前的所有输出作为未来层的输入。**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 二、为什么需要 DenseNets？
 
@@ -19,7 +19,11 @@ DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有
 
 ## 三、DenseNets 网络结构
 
+* 在不同的 Dense Block 之间设置了 transition layers 实现 down sampling (BN + Conv(kernel size 1×1) + Average Pooing(kernel size 2×2))
+  * 1×1 对 channel 数量进行降维
+  * 池化是为了降低特征图的尺寸
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -25,7 +25,7 @@ YOLO-V3主要改进
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>YOLO v3整体结构</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>YOLO v3整体结构</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>YOLO v3整体结构</p></figcaption></figure>
 
 ## 二、YOLOV3 网路结构解析
 
@@ -64,7 +64,7 @@ FPN 提取了 Darknet53 主干部分的**最后三层**作为特征层, 它可�
 
 ## 四、训练过程
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **置信度损失**和**类别损失**都采用**二值交叉熵损失**, 作者认为同一目标可以同时归为多类, 比如猫可归为猫类以及动物类, 这样能够应对更加复杂的场景. YOLO-V1-2中采用平方差损失
 
