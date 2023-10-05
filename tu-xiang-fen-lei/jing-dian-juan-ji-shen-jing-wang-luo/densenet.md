@@ -1,3 +1,7 @@
+---
+description: CVPR 2017 Best Paper
+---
+
 # DenseNet
 
 [Paper: Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)
