@@ -106,14 +106,8 @@ class Net(nn.Module):
 
 ## 四、效果分析
 
+<figure><img src="../../.gitbook/assets/image (47).png" alt="" width="563"><figcaption></figcaption></figure>
 
-
-
-
-
-
-
-
-参考资料
+## 参考资料
 
 * [【大话深度学习】轻量级网络--MobileNet V1](https://www.bilibili.com/video/BV1i44y1x7hP/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
