@@ -12,17 +12,19 @@ description: ImageNet 2017年冠军
 
 ## 二、SE结构
 
-
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## 三、设计原理
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
+## 四、代码实现
 
-
-四、代码实现
-
-
+```
+// Some code
+```
 
 五、效果分析
 
