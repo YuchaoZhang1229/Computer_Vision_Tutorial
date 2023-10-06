@@ -42,8 +42,8 @@
   * [DenseNet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/densenet.md)
   * [SENet](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/senet.md)
   * [总结](tu-xiang-fen-lei/jing-dian-juan-ji-shen-jing-wang-luo/zong-jie.md)
-* [轻量级卷积神经网络](tu-xiang-fen-lei/qing-liang-ji-juan-ji-shen-jing-wang-luo/README.md)
-  * [MobileNet V1](tu-xiang-fen-lei/qing-liang-ji-juan-ji-shen-jing-wang-luo/mobilenet-v1.md)
+* [轻量级卷积神经网络](tu-xiang-fen-lei/qing-liang-ji-juan-ji-shen-jing-wang-luo/mobilenet.md)
+  * [MobileNet V1](tu-xiang-fen-lei/qing-liang-ji-juan-ji-shen-jing-wang-luo/README.md)
 
 ## 目标检测
 
