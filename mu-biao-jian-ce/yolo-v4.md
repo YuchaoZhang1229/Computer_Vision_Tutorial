@@ -9,8 +9,8 @@
 
 ## 二、YOLO V3 的整体结构
 
-* **Backbone:** 在Darknet53中引入了CSP
-* **Neck:** 采用了SPP模块以及PAN模块
+* **Backbone:**  Darknet53 → CSPDarknet53&#x20;
+* **Neck （FPN）:** 采用了SPP模块以及PAN模块
 * **Head:** 没有变化
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -50,3 +50,4 @@ PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融�
 ## 参考资料
 
 * [Pytorch 搭建自己的YoloV4目标检测平台（Bubbliiiing 深度学习 教程）](https://www.bilibili.com/video/BV1Q54y1D7vj/?spm\_id\_from=333.999.0.0\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [睿智的目标检测30——Pytorch搭建YoloV4目标检测平台](https://blog.csdn.net/weixin\_44791964/article/details/106214657)
