@@ -19,9 +19,90 @@
 * 逐层卷积： 对输入特征图的**每一个通道只使用一个卷积核**
 * 逐点卷积：常规的 1 × 1 卷积， 目的是**跨通道信息融合**
 
+<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+```python
+def con_dw(inp, oup, stride):
+    dw=nn.Sequential(
+        # 逐层卷积 （不改变输出通道数）
+        nn.Conv2d(inp, inp, 3, stride, 1, groups=inp, bias=False)
+        nn.BatchNorm2d(inp)
+        nn.ReLU(inplace=True)
+        
+        # 逐点卷积
+        nn.Conv2d(inp, oup,1 ,1, 0, bias=False),
+        nn.BatchNorm2d(oup),
+        nn.ReLU(inplace=True)
+    return dw
+```
+
+#### 设计原理2：用ReLU6替换激活函数ReLU
+
+目的：为了在**移动端设备float16/int8**的低精度的时候也能有很好的数值分辨率。如果对ReLU的激活范围不加限制，输出**范围为0到正无穷**，如果激活值非常大，分布在一个很大的范围内，则**低精度的float16/int8无法很好地精确描述如此大范围的数值**，带来精度损失
+
+曲线：
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt="" width="292"><figcaption></figcaption></figure>
+
+公式： $$RELU6 = min(6,max(0,x))$$
+
+代码：fun = nn.ReLU6()
+
 
 
 ## 三、整体结构 + Code
+
+<figure><img src="../../.gitbook/assets/image (46).png" alt="" width="375"><figcaption><p>MobileNet V1整体结构</p></figcaption></figure>
+
+```python
+class Net(nn.Module):
+    def __init__(self):
+        supr(Net,self).__init__()
+        def conv_bn(inp, oup,stride):
+            return nn.Sequential(
+                nn.Corv2d(inp, oup,3,stride,1,bias=False),
+                nn.BatchNorm2d(oup),
+                nn.ReLu(inplace=True)
+            )
+        def conv_dw(inp, oup,stride):
+            return nn.Sequential(
+                nn.Conv2d(inp，inp，3, stride，1,groups-inp，bias=False),
+                nn.BatchNorm2d(inp),
+                nn.ReLU(inplace=True),
+
+                nn.Conv2d(inp,oup，1,1,0,bias-False),
+                nn.BatchNorm2d(oup),
+                nn. ReLU(inplace=True),
+            )
+        
+        self.model = nn.Sequential(
+            conv_bn( 3，32，2),
+            conv_dw(32,64，1),
+            conv_dw( 64,128，2),
+            conv_dw(128，128,1),
+            corv_dw(128，256，2)，
+            conv_dw(256，256，1),
+            conv_dw(256，512，2),
+            conv_dw(512,512，1),
+            conv_dw(512，512，1),
+            conv_dw(512，512，1)，
+            conv_dw(512,512，1),
+            conv_dw(512，512，1)，
+            conu_dw(512,1024，2)，
+            conv_dw(1024，1024，1),
+            nn.AvgPool2d(7),
+            )
+        
+        self.fc = nn.Linear(1024,1000)
+        
+        def forward(self，x):
+            x = self.model(x)
+            x = x.view(-1,1024)
+            x = self.fc(x)
+            return x
+```
 
 ## 四、效果分析
 
