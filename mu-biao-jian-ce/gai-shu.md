@@ -2,6 +2,7 @@
 
 ## YOLO 系列
 
+* SSD-2016
 * YOLO v1-2015
 * YOLO v2-2016
 * YOLO v3-2018
