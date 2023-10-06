@@ -8,19 +8,18 @@
 * [卷积神经网络基础](qian-zhi-zhi-shi/juan-ji-shen-jing-wang-luo-ji-chu.md)
 * [面试](qian-zhi-zhi-shi/mian-shi.md)
 
-## 数据增强
-
-* [Mixup](shu-ju-zeng-qiang/mixup.md)
-* [RICAP](shu-ju-zeng-qiang/ricap.md)
-* [Cutout](shu-ju-zeng-qiang/cutout.md)
-* [Random Erasing](shu-ju-zeng-qiang/random-erasing.md)
-* [AutoAugment](shu-ju-zeng-qiang/autoaugment.md)
-
 ## 训练技巧
 
-* [Warmup](xun-lian-ji-qiao/warmup.md)
-* [Linear Scaling Learning Rate](xun-lian-ji-qiao/linear-scaling-learning-rate.md)
-* [Cosine Learning Rate Decay](xun-lian-ji-qiao/cosine-learning-rate-decay.md)
+* [数据增强](xun-lian-ji-qiao/shu-ju-zeng-qiang/README.md)
+  * [Mixup](xun-lian-ji-qiao/shu-ju-zeng-qiang/mixup.md)
+  * [RICAP](xun-lian-ji-qiao/shu-ju-zeng-qiang/ricap.md)
+  * [Cutout](xun-lian-ji-qiao/shu-ju-zeng-qiang/cutout.md)
+  * [Random Erasing](xun-lian-ji-qiao/shu-ju-zeng-qiang/random-erasing.md)
+  * [AutoAugment](xun-lian-ji-qiao/shu-ju-zeng-qiang/autoaugment.md)
+* [学习率](xun-lian-ji-qiao/xue-xi-shuai/README.md)
+  * [Warmup](xun-lian-ji-qiao/xue-xi-shuai/warmup.md)
+  * [Linear Scaling Learning Rate](xun-lian-ji-qiao/xue-xi-shuai/linear-scaling-learning-rate.md)
+  * [Cosine Learning Rate Decay](xun-lian-ji-qiao/xue-xi-shuai/cosine-learning-rate-decay.md)
 * [Label Smoothing](xun-lian-ji-qiao/label-smoothing.md)
 * [Knowledge Distiallation](xun-lian-ji-qiao/knowledge-distiallation.md)
 * [其他 Tricks](xun-lian-ji-qiao/qi-ta-tricks.md)
