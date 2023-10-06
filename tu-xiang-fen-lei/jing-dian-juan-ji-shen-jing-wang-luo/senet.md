@@ -41,11 +41,9 @@ class SELayer(nn.Module):
         return x * y.expand_as(x)
 ```
 
-五、效果分析
+## 五、效果分析
 
-
-
-
+<figure><img src="../../.gitbook/assets/8f06d9030a1330818d43a4723e81b00.png" alt=""><figcaption></figcaption></figure>
 
 ## 参考资料：
 
