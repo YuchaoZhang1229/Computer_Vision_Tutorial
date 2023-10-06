@@ -26,9 +26,9 @@ DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有
 * 每一个 Dense Block 输出为 k 个 feature map，那么第 i 个 Dense Block 的输入为 （i-1）× k + （上一个 Dense Block 的输出 channel）
   * k 为 growth rate，默认是32
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A deep DenseNet with three dense blocks. The layers between two adjacent blocks are referred to as transition layers and change feature-map sizes via convolution and pooling.</p></figcaption></figure>
 
-
+<figure><img src="../../.gitbook/assets/densenet2.png" alt=""><figcaption><p>DenseNet architectures for ImageNet. The growth rate for all the networks is k = 32. Note that each “conv” layer shown in the table corresponds the sequence BN-ReLU-Conv.</p></figcaption></figure>
 
 ## 参考资料
 
