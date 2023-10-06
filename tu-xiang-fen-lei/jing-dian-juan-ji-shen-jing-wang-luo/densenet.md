@@ -22,6 +22,9 @@ DenseNet 就是密集连接的卷积网络。它与 ResNet 非常相似。但有
 * 在不同的 Dense Block 之间设置了 transition layers 实现 down sampling (BN + Conv(kernel size 1×1) + Average Pooing(kernel size 2×2))
   * 1×1 对 channel 数量进行降维
   * 池化是为了降低特征图的尺寸
+  * 转换为 channel 的维度
+* 每一个 Dense Block 输出为 k 个 feature map，那么第 i 个 Dense Block 的输入为 （i-1）× k + （上一个 Dense Block 的输出 channel）
+  * k 为 growth rate，默认是32
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
