@@ -2,10 +2,10 @@
 
 ## 一、YOLO-V4主要改进
 
-1. 主干特征提取网络的改进，**DarkNet53 → CSPDarknet53**,&#x20;
-2. 加强特征提取网络的改进，使用了**SPP**和[**PANet**](https://paperswithcode.com/method/panet)结构, 以及
+1. 主干特征提取网络的改进，**DarkNet53 →** [**CSPDarknet53**](https://paperswithcode.com/method/cspdarknet53),&#x20;
+2. 加强特征提取网络的改进，使用了[**SPP**](https://paperswithcode.com/paper/spatial-pyramid-pooling-in-deep-convolutional)和[**PANet**](https://paperswithcode.com/method/panet)结构, 以及
 3. 使用了 **CIOU** 作为回归 Loss
-4. 使用了**Mish**激活函数.&#x20;
+4. 使用了[**Mish**](https://paperswithcode.com/method/mish)激活函数.&#x20;
 5. 训练用到的小技巧： **Mosaic 数据增强， Label Smoothing平滑， 学习率余弦退火衰减**
 
 ## 二、YOLO V3 的整体结构
