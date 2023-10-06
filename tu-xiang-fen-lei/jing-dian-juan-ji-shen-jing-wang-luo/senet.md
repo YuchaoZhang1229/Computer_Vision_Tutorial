@@ -4,15 +4,23 @@ description: ImageNet 2017年冠军
 
 # SENet
 
+原理源流[Paper：Squeeze-and-Excitation Networks](https://arxiv.org/abs/1709.01507)
+
 ## 一、为什么需要 Attention 机制
 
-**提出背景：**常规卷积核利用感受野在**空间维度** （H×W）和**通道维度** （channel）对信息进行相乘求和的计算； 现有的网络很多主要是在空间维度方面来进行特征的融合 （Inception的多尺度）； 模仿人类视觉机制， 只关注部分区域， 忽略无关区域；在 NLP 领域 Attention 取得了巨大成功， CV 领域开始借鉴
+**提出背景：**常规卷积核利用感受野在**空间维度** （H×W）和**通道维度** （channel）对信息进行相乘求和的计算； 现有的网络很多主要是在空间维度方面来进行特征的融合 （Inception的多尺度）； 模仿人类视觉机制， 只关注部分区域， 忽略无关区域；在 NLP 领域 Attention 取得了巨大成功， CV 领域开始借鉴 **（空间存储的是特征表示，通道存储的是不同的特征）**
 
 **通道维度的注意力机制：**在常规卷积中， 输入信息的每个通道进行计算后的结果会进行求和输出，这时每个通道的重要程度是相同的**（直接求和，每个通道的权重为1）**。而通道维度的注意力机制，则通过学习的方式来自动获取每个特征通道的重要程度，以增强有用的通道特征，抑制不重要的通道特征 **（加权求和，自动学习）**
 
 ## 二、SE结构
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+* **Squeeze：**X 经过一系列传统卷积得到 U，对 U （H×W×C）先做一个 Global Average Pooling，输出的 1×1×C数据，这个特征向量一定程度上可以代表之前的输入信息
+* **Excitation：**再经过两个全连接层来学习通道间的重要性， 用 sigmiod 限制到 \[0，1] 的范围，这时得到的输出可以看作每个通道重要程度的权重
+* **Reweight：**将 Excitation 输出的权重看作每个通道的重要性，然后通过乘法加权到之前的特征上， 完成对U的channels进行了重要程度的重新分配
+
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption><p>原理图</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption><p>计算图</p></figcaption></figure>
 
 ## 三、设计原理
 
