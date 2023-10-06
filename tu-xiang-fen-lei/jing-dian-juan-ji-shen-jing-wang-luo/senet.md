@@ -53,6 +53,10 @@ class SELayer(nn.Module):
 
 <figure><img src="../../.gitbook/assets/8f06d9030a1330818d43a4723e81b00.png" alt=""><figcaption></figcaption></figure>
 
+## 六、总结
+
+SE block 可以理解为 channel 维度上的注意力机制 （及重新分配通道上的 feature map 对后续计算的权重）（后续  SKNet， MobileNet都会有 SE block 的身影）
+
 ## 参考资料：
 
 * [【CV中的注意力机制】SENet](https://www.bilibili.com/video/BV1QA411F7rR/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
