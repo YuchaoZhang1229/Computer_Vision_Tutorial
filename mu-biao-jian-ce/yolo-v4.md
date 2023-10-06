@@ -1,13 +1,13 @@
 # YOLO-V4
 
-## YOLO-V4主要改进
+## 一、YOLO-V4主要改进
 
 * **精度:** YOLOv4在目标检测领域的基准测试中, 表现出了出色的性能和准确性
 * **速度:** 尽管YOLOv4更加准确, 但并没有牺牲速度. YOLOv4仍然可以实时进行目标检测, 这在实时系统中非常重要
 * **改进的特性:** YOLOv4引入了多种新特性来提高性能, 包括**CSPDarknet53**的骨干网络, **PANet**和**SAM**块的路径聚合网络, 以及**Mish**激活函数. 这些都是为了提高网络的准确性和速度
 * **更少的计算资源:** 尽管YOLOv4更加强大, 但其设计考虑了实用性, 所以在计算资源有限的设备上, 仍可以运行
 
-## 改进了网络结构
+## 二、YOLO V3 的整体结构
 
 * **Backbone:** 在Darknet53中引入了CSP
 * **Neck:** 采用了SPP模块以及PAN模块
@@ -46,3 +46,7 @@ PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融�
 
 * eliminate grid sensitivities
 * IoU Threshold (正负样本匹配)
+
+## 参考资料
+
+* [Pytorch 搭建自己的YoloV4目标检测平台（Bubbliiiing 深度学习 教程）](https://www.bilibili.com/video/BV1Q54y1D7vj/?spm\_id\_from=333.999.0.0\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)

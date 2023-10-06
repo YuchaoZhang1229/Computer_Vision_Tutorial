@@ -1,6 +1,6 @@
 # YOLO-V3
 
-YOLO-V3主要改进
+## 一、YOLO-V3主要改进
 
 <mark style="color:red;">一般使用 yolov3-spp-ultralytics</mark>
 
@@ -10,7 +10,7 @@ YOLO-V3主要改进
 * **使用 Darknet-53 网络结构:** YOLO-V3使用 DarkNet-53 作为其基础架构, 这是一个深度网络, 由卷积层, 池化层和连接层组成. 这使得模型在保持高速度的同时也具有很高的准确性
 * **使用逻辑回归进行类别预测:** 不同于前两个版本使用 softmax, YOLO-V3采用了多标签分类的策略, 使用逻辑回归进行类别预测, 这使得模型在处理多类别标签时更为灵活
 
-## 一、YOLOV3 整体结构
+## 二、YOLOV3 整体结构
 
 * **DarkNet53 (backbone):** 对输入进来的图片进行特征提取, 获得三个有效特征层 (主干特征提取网络)
 * **FPN (Neck):** 对获取到的三个有效特征层, 上采样后进行特征融合 (加强特征融合网络)
@@ -27,7 +27,7 @@ YOLO-V3主要改进
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>YOLO v3整体结构</p></figcaption></figure>
 
-## 二、YOLOV3 网路结构解析
+## 三、YOLOV3 网路结构解析
 
 ### 1. 主干网络 DarkNet53
 
@@ -52,7 +52,7 @@ FPN 提取了 Darknet53 主干部分的**最后三层**作为特征层, 它可�
 * (26, 26, 255)&#x20;
 * (13, 13, 255)
 
-## 三、测试过程：预测结果的解码
+## 四、测试过程：预测结果的解码
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>测试过程</p></figcaption></figure>
 
@@ -62,7 +62,7 @@ FPN 提取了 Darknet53 主干部分的**最后三层**作为特征层, 它可�
 * 对上上述先验框进行解码
 * 然后进行得分筛选与非极大抑制
 
-## 四、训练过程
+## 五、训练过程
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
