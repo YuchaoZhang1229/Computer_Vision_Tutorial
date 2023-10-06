@@ -25,7 +25,15 @@ description: '2017'
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+对于一个卷积点而言：&#x20;
+
+* 假设有一个3×3大小的卷积层，其输入通道为16、输出通道为32。具体为，32个3×3大小的卷积核会遍历16个通道中的每个数据，最后可得到所需的32个输出通道，所需参数为16×32×3×3=4608个。
+* 应用深度可分离卷积，用16个3×3大小的卷积核分别遍历16通道的数据，得到了16个特征图谱。在融合操作之前，接着用32个1×1大小的卷积核遍历这16个特征图谱，所需参数为16×3×3+16×32×1×1=656个。 可以看出来depthwise separable convolution可以减少模型
+* 可以看出来depthwise separable convolution可以减少模型的参数
+
+
+
+
 
 ```python
 def con_dw(inp, oup, stride):
@@ -115,3 +123,4 @@ class Net(nn.Module):
 ## 参考资料
 
 * [【大话深度学习】轻量级网络--MobileNet V1](https://www.bilibili.com/video/BV1i44y1x7hP/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [神经网络学习小记录23——MobileNet模型的复现详解](https://blog.csdn.net/weixin\_44791964/article/details/102819915?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522169660151916800186539462%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=169660151916800186539462\&biz\_id=0\&utm\_medium=distribute.pc\_search\_result.none-task-blog-2\~blog\~first\_rank\_ecpm\_v1\~rank\_v31\_ecpm-1-102819915-null-null.nonecase\&utm\_term=Mobilenet\&spm=1018.2226.3001.4450)
