@@ -51,4 +51,5 @@ PAN (Path Aggregation Network) 结构其实就是在FPN (从顶到底信息融�
 ## 参考资料
 
 * [Pytorch 搭建自己的YoloV4目标检测平台（Bubbliiiing 深度学习 教程）](https://www.bilibili.com/video/BV1Q54y1D7vj/?spm\_id\_from=333.999.0.0\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [Pytorch 搭建自己的Mobilenet-YoloV4目标检测平台（Bubbliiiing 深度学习 教程）](https://www.bilibili.com/video/BV1yA411M7T4/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
 * [睿智的目标检测30——Pytorch搭建YoloV4目标检测平台](https://blog.csdn.net/weixin\_44791964/article/details/106214657)
