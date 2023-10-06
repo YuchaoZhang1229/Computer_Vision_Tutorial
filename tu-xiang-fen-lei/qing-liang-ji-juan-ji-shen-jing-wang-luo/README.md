@@ -115,4 +115,3 @@ class Net(nn.Module):
 ## 参考资料
 
 * [【大话深度学习】轻量级网络--MobileNet V1](https://www.bilibili.com/video/BV1i44y1x7hP/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
-* [六分钟精通 MobileNet（思想，公式，代码）--计算机视觉系列 06【推荐】](https://www.bilibili.com/video/BV1mu411i7rg/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
