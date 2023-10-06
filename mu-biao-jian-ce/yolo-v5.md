@@ -83,9 +83,9 @@ Eliminate grid sensitivities
 
 
 
+## 参考资料
 
-
-
+* [Pytorch 搭建自己的YoloV5目标检测平台（Bubbliiiing 源码详解 训练 预测）-YoloV5整体结构介绍](https://www.bilibili.com/video/BV1FZ4y1m777/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
 
 
 
