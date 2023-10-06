@@ -23,7 +23,7 @@ description: '2017'
 * **逐层卷积 (Depthwise Convolutions)：** 对输入特征图的**每一个通道只使用一个卷积核**
 * **逐点卷积 (Pointwise Convolutions)：**常规的 1 × 1 卷积， 目的是**跨通道信息融合**
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43).png" alt="" width="375"><figcaption></figcaption></figure>
 
 对于一个卷积点而言：&#x20;
 
@@ -31,9 +31,9 @@ description: '2017'
 * 应用深度可分离卷积，用16个3×3大小的卷积核分别遍历16通道的数据，得到了16个特征图谱。在融合操作之前，接着用32个1×1大小的卷积核遍历这16个特征图谱，所需参数为16×3×3+16×32×1×1=656个。 可以看出来depthwise separable convolution可以减少模型
 * 可以看出来depthwise separable convolution可以减少模型的参数
 
+通俗地理解就是3x3的卷积核厚度只有一层，然后在输入张量上一层一层地滑动，每一次卷积完生成一个输出通道，当卷积完成后，在利用1x1的卷积调整厚度。
 
-
-
+<figure><img src="../../.gitbook/assets/image (49).png" alt="" width="292"><figcaption></figcaption></figure>
 
 ```python
 def con_dw(inp, oup, stride):
