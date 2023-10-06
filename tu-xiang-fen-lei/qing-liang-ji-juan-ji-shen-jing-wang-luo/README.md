@@ -20,8 +20,8 @@ description: '2017'
 
 #### 设计原理1：常规卷积换成深度可分离卷积 Depthwise Separable Convolution （逐层卷积 + 逐点卷积）
 
-* **逐层卷积 （Depthwise Convolutions）：** 对输入特征图的**每一个通道只使用一个卷积核**
-* **逐点卷积 （Pointwise Convolutions）：**常规的 1 × 1 卷积， 目的是**跨通道信息融合**
+* **逐层卷积 (Depthwise Convolutions)：** 对输入特征图的**每一个通道只使用一个卷积核**
+* **逐点卷积 (Pointwise Convolutions)：**常规的 1 × 1 卷积， 目的是**跨通道信息融合**
 
 <figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
