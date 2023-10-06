@@ -48,3 +48,4 @@ class SELayer(nn.Module):
 ## 参考资料：
 
 * [【CV中的注意力机制】SENet](https://www.bilibili.com/video/BV1QA411F7rR/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
+* [ImageNet 冠军模型 SE-Net 详解（作者报告，搬运油管，中文）](https://www.bilibili.com/video/BV1Up4y187qb/?spm\_id\_from=333.337.search-card.all.click\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
