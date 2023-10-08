@@ -4,30 +4,6 @@ description: 面试宝典 https://github.com/amusi/Deep-Learning-Interview-Book
 
 # 面试
 
-苏州
-
-海康威视, 博世, 科大讯飞
-
-* 微软
-* 博世
-* ZOOM
-* Momenta
-* Wind
-* 思科
-* 飞利浦
-* 360
-* 华为
-* 收钱吧
-* 中国移动苏州研究院
-* 科大讯飞
-* 建信金科、中银金科, 农行, 邮储
-* 同程艺龙
-* 企查查
-
-
-
-##
-
 [项目 树莓派slam无人驾驶ROS小车](https://www.bilibili.com/video/BV1ub411i7vZ/?p=6\&spm\_id\_from=pageDriver\&vd\_source=4afb0374462e2a6a5fe3309f3b19500d)
 
 * ROS开源系统
