@@ -1,12 +1,10 @@
 # 经典卷积神经网络
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+## 发展脉络
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+LeNet -> AlexNet -> ZFNet -> VGG -> NiN -> GoogLeNet -> ResNet -> DenseNet -> ResNetXt -> EfficientNet
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/d8b3f3b025d1e13074955cd1e39749a.png" alt=""><figcaption></figcaption></figure>
 
 ## 早期探索
 
@@ -44,6 +42,14 @@
 
 * NASNet
 * EfficientNet
+
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ## 参考资料
 
