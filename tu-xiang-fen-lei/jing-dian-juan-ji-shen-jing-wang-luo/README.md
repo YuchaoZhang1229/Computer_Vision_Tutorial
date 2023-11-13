@@ -6,6 +6,8 @@ LeNet -> AlexNet -> ZFNet -> VGG -> NiN -> GoogLeNet -> ResNet -> DenseNet -> Re
 
 <figure><img src="../../.gitbook/assets/d8b3f3b025d1e13074955cd1e39749a.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/289c031945d4569d0e8e8143ac0d72f.png" alt=""><figcaption></figcaption></figure>
+
 ## 早期探索
 
 * LeNet
